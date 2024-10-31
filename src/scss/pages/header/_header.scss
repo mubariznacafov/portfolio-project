@@ -1,1 +1,43 @@
-
+@use "../../utils/variables" as *;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 200px;
+  margin-top: 10px;
+  font-family: $default_font;
+  a {
+    text-decoration: none;
+    color: $secondary_color;
+    font-size: 15px;
+  }
+  .pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: $fifth_color;
+    padding: 10px;
+    border-radius: 10px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 25px;
+      border-radius: 5px;
+      background: $fifth_color;
+    }
+    a:hover {
+      color: $fifth_color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 25px;
+      border-radius: 5px;
+      background: $primary_color;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
