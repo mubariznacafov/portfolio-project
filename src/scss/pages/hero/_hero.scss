@@ -9,10 +9,34 @@
   margin-top: 150px;
   .left_side {
     width: 450px;
+    h1 {
+      font-size: 47px;
+    }
     .buttons {
       display: flex;
       gap: 10px;
       margin-top: 10px;
+      .download_btn {
+        button {
+          background: #38bef6;
+          padding: 8px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          color: $fifth_color;
+          cursor: pointer;
+        }
+      }
+      .scroll_down_btn {
+        button {
+          background: #29292b;
+          padding: 8px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
     }
   }
   .right_side {
