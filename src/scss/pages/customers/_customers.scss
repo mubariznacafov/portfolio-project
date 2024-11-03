@@ -9,6 +9,8 @@
 }
 
 .customers {
+  display: flex;
+  gap: 20px;
   margin: 150px 0;
   overflow: hidden;
   .cards {
@@ -16,12 +18,9 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    animation: moveCards 10s linear infinite; // Animasyonu burada ekledik
-    width: max-content; // İçeriğin genişliğine göre uzamasını sağlar
+    animation: moveCards 15s linear infinite;
+    width: max-content;
 
-    &:hover {
-      animation-play-state: paused; // Üzerine gelindiğinde durur (isteğe bağlı)
-    }
     .card {
       width: 330px;
       background: $fifth_color;
