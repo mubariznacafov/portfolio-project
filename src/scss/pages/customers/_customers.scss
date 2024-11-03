@@ -1,0 +1,36 @@
+@use "../../utils/variables" as *;
+@keyframes moveCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.customers {
+  margin: 150px 0;
+  overflow: hidden;
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: moveCards 10s linear infinite; // Animasyonu burada ekledik
+    width: max-content; // İçeriğin genişliğine göre uzamasını sağlar
+
+    &:hover {
+      animation-play-state: paused; // Üzerine gelindiğinde durur (isteğe bağlı)
+    }
+    .card {
+      width: 330px;
+      background: $fifth_color;
+      border: 1px solid red;
+      .person {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+    }
+  }
+}
