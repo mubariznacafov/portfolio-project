@@ -1,0 +1,52 @@
+@use "../../utils/variables" as *;
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 200px 0;
+  font-family: $default_font;
+  .general_information {
+    width: 800px;
+    .card {
+      padding: 30px;
+      width: 800px;
+      height: 200px;
+      background: $fifth_color;
+      border-radius: 10px;
+      .top_information {
+        margin-bottom: 10px;
+        p {
+          background: $fifth_color;
+        }
+      }
+      .bottom_information {
+        background: $fifth_color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left_side {
+          display: flex;
+          justify-content: center;
+          background: $fifth_color;
+          gap: 10px;
+          h1,
+          p {
+            background: $fifth_color;
+          }
+          p{
+            font-size: 10px;
+          }
+        }
+        .right_side {
+          .img {
+            img {
+              background: $fifth_color;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
