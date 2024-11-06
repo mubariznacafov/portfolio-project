@@ -1,6 +1,8 @@
 @use "../../utils/variables" as *;
 .about {
   display: flex;
+  flex-direction: column;
+  gap: 150px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -34,7 +36,7 @@
           p {
             background: $fifth_color;
           }
-          p{
+          p {
             font-size: 10px;
           }
         }
@@ -44,6 +46,57 @@
               background: $fifth_color;
               cursor: pointer;
             }
+          }
+        }
+      }
+    }
+  }
+  .tools {
+    width: 800px;
+    .top_info {
+      h1{
+        font-weight: 500;
+      }
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+        width: 450px;
+        color: $sixth_color;
+      }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 10px;
+      margin-top: 30px;
+      .card {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 192px;
+        gap: 7px;
+        padding: 5px 0;
+        border: 1px solid $fifth_color;
+        border-radius: 10px;
+        .img {
+          background: $fifth_color;
+          border-radius: 10px;
+          padding: 6px;
+          margin-left: 5px;
+          img {
+            width: 30px;
+            background: $fifth_color;
+          }
+        }
+        .tool_name {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: start;
+          gap: 5px;
+          p {
+            font-size: 10px;
+            color: $sixth_color;
           }
         }
       }

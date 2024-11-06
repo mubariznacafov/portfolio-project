@@ -1,6 +1,15 @@
 import React from "react";
 import "../scss/pages/about/_about.scss";
 import logo from "../assets/logo.svg";
+import FigmaLogo from "../assets/figma.svg";
+import CSSLogo from "../assets/css3.svg";
+import JavaScript from "../assets/javascript.svg";
+import MongoDB from "../assets/mongodb.svg";
+import NodeJs from "../assets/nodejs.svg";
+import Favicon from "../assets/favicon.svg";
+import ExpressJs from "../assets/expressjs.svg";
+import ReactLogo from "../assets/react.svg";
+import Tailwind from "../assets/tailwindcss.svg";
 const About = () => {
   return (
     <div className="about">
@@ -31,6 +40,90 @@ const About = () => {
               <div className="img">
                 <img src={logo} alt="site_logo" />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="tools">
+        <div className="top_info">
+          <h1>Essential tools I use</h1>
+          <p>
+            Discover the powerful tools and technologies i use to create
+            exceptional, high-performing websites & applications.
+          </p>
+        </div>
+        <div className="cards">
+          <div className="card">
+            <div className="img">
+              <img src={FigmaLogo} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>Figma</h5>
+              <p>Design tool</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={CSSLogo} alt="css_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>CSS</h5>
+              <p>User Interface</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={JavaScript} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>JavaScript</h5>
+              <p>Interaction</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="img">
+              <img src={NodeJs} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>NodeJS</h5>
+              <p>Web Server</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={ExpressJs} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>ExpressJS</h5>
+              <p>Node Framework</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={MongoDB} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>MongoDB</h5>
+              <p>Database</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={ReactLogo} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>React</h5>
+              <p>Framework</p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="img">
+              <img src={Tailwind} alt="figma_logo" />
+            </div>
+            <div className="tool_name">
+              <h5>Figma</h5>
+              <p>User Interface</p>
             </div>
           </div>
         </div>
