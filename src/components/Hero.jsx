@@ -1,11 +1,20 @@
 import React from "react";
 import "../scss/pages/hero/_hero.scss";
 import PersonalPhoto from "../assets/person_photo.jpg";
+import Avatar from "../assets/avatar-1.jpg";
 const Hero = () => {
   return (
     <div className="hero">
       <div className="left_side">
-        <h3>Aveliable for work</h3>
+        <div className="aveliable_work">
+          <div className="img">
+            <img src={Avatar} alt="" />
+          </div>
+          <div className="aveliable">
+            <span class="green-bullet">&#x2022;</span>
+            <h3>Available for work</h3>
+          </div>
+        </div>
         <h1>Building Scalable Modern Websites for the Future</h1>
         <div className="buttons">
           <div className="download_btn">

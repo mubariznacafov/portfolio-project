@@ -54,7 +54,7 @@
   .tools {
     width: 800px;
     .top_info {
-      h1{
+      h1 {
         font-weight: 500;
       }
       p {
@@ -78,6 +78,8 @@
         padding: 5px 0;
         border: 1px solid $fifth_color;
         border-radius: 10px;
+        cursor: pointer;
+
         .img {
           background: $fifth_color;
           border-radius: 10px;
